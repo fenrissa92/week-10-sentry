@@ -1,0 +1,22 @@
+.capsule-card {
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+.capsule-card img {
+  width: 50%;
+  max-height: 200px;
+  object-fit: cover;
+  margin-top: 10px;
+}
+
+.capsule-card h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.capsule-card p {
+  font-size: 14px;
+}

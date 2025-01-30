@@ -5,7 +5,7 @@ const TimeCapsuleForm = ({ onAddCapsule }) => {
   const [userName, setUserName] = useState("");
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
-  const [imageFile, setImageFile] = useState(null); // Store the file
+  const [imageFile, setImageFile] = useState(null);
   const [id, setDateSubmitted] = useState("");
 
   // handle file input change
@@ -19,16 +19,15 @@ const TimeCapsuleForm = ({ onAddCapsule }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // if
+    const formattedDate = new Date(Date.now()).toLocaleDateString("en-GB");
     const newCapsule = {
-      id: Date.now(), // Unique ID using current timestamp
+      id: formattedDate,
       userName,
       title,
       content,
       imageFile,
     };
 
-    console.log("New Capsule:", newCapsule); // Log the new capsule object
     onAddCapsule(newCapsule);
     setUserName("");
     setTitle("");

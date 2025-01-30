@@ -6,9 +6,9 @@
 }
 
 .capsule-card img {
-  width: 50%;
-  max-height: 200px;
-  object-fit: cover;
+  width: 100%;
+  max-height: 400px;
+  object-fit: fill;
   margin-top: 10px;
 }
 

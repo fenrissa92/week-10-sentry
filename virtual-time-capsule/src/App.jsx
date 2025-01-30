@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import capsulesData from "./data/capsuleData";
 // import TimeCapsuleItem from "./components/TimeCapsuleItem";
 import TimeCapsuleList from "./components/TimeCapsuleList";
@@ -11,14 +13,15 @@ function App() {
   // const [selectedCapsule, setSelectedCapsule] = useState(capsulesData[0]);
 
   const addCapsule = (newCapsule) => {
-    setCapsules((prevCapsules) => [...prevCapsules, newCapsule]); // Add the new capsule to the array
+    setCapsules((prevCapsules) => [...prevCapsules, newCapsule]);
   };
 
   return (
     <>
-      <h1>Virtual Time Capsule</h1>
+      <Header />
       <TimeCapsuleForm onAddCapsule={addCapsule} />
       <TimeCapsuleList capsules={capsules} />
+      <Footer />
     </>
   );
 }

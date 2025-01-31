@@ -1,17 +1,20 @@
 // src/theme.js
 export const theme = {
   colors: {
-    primary: "#1F1F2E",
-    secondary: "#B3A4D8",
-    accent: "#FF77FF",
-    text: "#EAEAEA",
-    textDark: "#333333",
-    hover: "#F9A825",
+    primary: "#A8E6CF",
+    secondary: "#D4F4DD",
+    accent: "#8FC1A9", 
+    text: "#2A2A2A",
+    textDark: "#1B1B1B",
+    accentText: "#3E6259",
+    hover: "#6FAF96",
+    headerBg: "#D4F4DD",
+    headerText: "#4B7F62",
   },
   fonts: {
-    main: "'Roboto', sans-serif",
-    heading: "'Playfair Display', serif",
-    script: "'Dancing Script', cursive",
+    main: "Geneva, sans-serif",
+    heading: "Verdana, Helvetica, Times, serif", 
+    script: "'Arial', Helvetica, sans-serif",
   },
   spacing: {
     small: "8px",

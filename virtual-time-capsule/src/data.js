@@ -24,4 +24,20 @@ export const initialMemories = [
     mediaType: "video",
     mediaUrl: "./IMG_6797.MOV",
   },
+  {
+    id: new Date().toISOString(),
+    username: "JaneDoe",
+    title: "Second Memory",
+    message: "This is another memory.",
+    mediaType: "audio",
+    mediaUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+  },
+  {
+    id: new Date().toISOString(),
+    username: "Alice",
+    title: "Music Video Memory",
+    message: "A nostalgic moment.",
+    mediaType: "video",
+    mediaUrl: "https://www.w3schools.com/html/movie.mp4",
+  },
 ];

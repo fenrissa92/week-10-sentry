@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const Footer = () => (
   <FooterContainer>
-    <p>© 2025 Scenes from a Memory. All rights reserved.</p>
+    <p>Built with React by Team 10 - GKS (Giuseppe - Kit - Samantha)</p>
   </FooterContainer>
 );
 

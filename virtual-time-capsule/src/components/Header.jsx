@@ -9,11 +9,17 @@ const Header = () => (
 );
 
 const HeaderContainer = styled.header`
-  background-color: ${({ theme }) => theme.colors.primary};
-  color: ${({ theme }) => theme.colors.accent};
+  background-color: ${({ theme }) => theme.colors.secondary}; 
+  color: ${({ theme }) => theme.colors.headerText} !important; /* Force color */
   padding: ${({ theme }) => theme.spacing.large};
   text-align: center;
   box-shadow: ${({ theme }) => theme.shadows.medium};
+  border-radius: ${({ theme }) => theme.borderRadius};
+
+  h1 {
+    color: ${({ theme }) => theme.colors.headerText} !important; /* Force color */
+  }
 `;
+
 
 export default Header;

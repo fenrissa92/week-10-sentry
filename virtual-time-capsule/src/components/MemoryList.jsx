@@ -1,4 +1,3 @@
-// src/components/MemoryList.jsx
 import React from "react";
 import styled from "styled-components";
 import Slider from "react-slick";

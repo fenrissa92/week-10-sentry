@@ -1,9 +1,8 @@
-// src/theme.js
 export const theme = {
   colors: {
     primary: "#A8E6CF",
     secondary: "#D4F4DD",
-    accent: "#8FC1A9", 
+    accent: "#8FC1A9",
     text: "#2A2A2A",
     textDark: "#1B1B1B",
     accentText: "#3E6259",
@@ -13,7 +12,7 @@ export const theme = {
   },
   fonts: {
     main: "Geneva, sans-serif",
-    heading: "Verdana, Helvetica, Times, serif", 
+    heading: "Verdana, Helvetica, Times, serif",
     script: "'Arial', Helvetica, sans-serif",
   },
   spacing: {

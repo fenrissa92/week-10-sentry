@@ -1,4 +1,3 @@
-// src/components/Header.jsx
 import React from "react";
 import styled from "styled-components";
 
@@ -9,7 +8,7 @@ const Header = () => (
 );
 
 const HeaderContainer = styled.header`
-  background-color: ${({ theme }) => theme.colors.secondary}; 
+  background-color: ${({ theme }) => theme.colors.secondary};
   color: ${({ theme }) => theme.colors.headerText} !important; /* Force color */
   padding: ${({ theme }) => theme.spacing.large};
   text-align: center;
@@ -17,9 +16,9 @@ const HeaderContainer = styled.header`
   border-radius: ${({ theme }) => theme.borderRadius};
 
   h1 {
-    color: ${({ theme }) => theme.colors.headerText} !important; /* Force color */
+    color: ${({ theme }) =>
+      theme.colors.headerText} !important; /* Force color */
   }
 `;
-
 
 export default Header;

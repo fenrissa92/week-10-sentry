@@ -1,5 +1,5 @@
-// src/components/Form.jsx
 import React, { useState } from "react";
+import "./form.css";
 
 const Form = ({ addMemory }) => {
   const [username, setUsername] = useState("");
@@ -43,39 +43,40 @@ const Form = ({ addMemory }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="form-container" onSubmit={handleSubmit}>
       <label>
-        Username:
         <input
           type="text"
           value={username}
+          placeholder="Name"
           onChange={(e) => setUsername(e.target.value)}
           required
         />
       </label>
       <label>
-        Title:
         <input
           type="text"
           value={title}
+          placeholder="Title"
           onChange={(e) => setTitle(e.target.value)}
           required
         />
       </label>
       <label>
-        Message:
         <textarea
           value={message}
+          placeholder="Message"
           onChange={(e) => setMessage(e.target.value)}
           required
         />
       </label>
       <label>
-        Media:
         <input
+          className="media-input"
           type="file"
           onChange={handleMediaChange}
           accept="image/*,audio/*,video/*"
+          required
         />
       </label>
       <button type="submit">Add Memory</button>

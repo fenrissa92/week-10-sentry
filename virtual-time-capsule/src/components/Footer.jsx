@@ -4,6 +4,7 @@ import styled from "styled-components";
 const Footer = () => (
   <FooterContainer>
     <p>Built with React by Team 10 - GKS (Giuseppe - Kit - Samantha)</p>
+    <button onClick={() => {throw new Error("This is your first error!");}}>Break the world</button>;
   </FooterContainer>
 );
 
